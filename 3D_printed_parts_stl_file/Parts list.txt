@@ -1,0 +1,18 @@
+Parts list
+
+1. Motor box_1.stl×3
+2. Motor box_2.stl×3
+3. Motor box_3.stl×3
+4. Rail.stl×3
+5. Rail base.stl
+6. Illumination module scaffold.stl
+7. Illumination module fixture.stl×3
+8. Transilluminator_1.stl
+9. Transilluminator_2.stl
+10. Transilluminator_3.stl
+11. Transilluminator_4.stl
+12. Base.stl
+13. Filter wheel.stl
+14. Filter box cover.stl
+15. Separater.stl
+16. Sample stage.stl
