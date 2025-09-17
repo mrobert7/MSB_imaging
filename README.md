@@ -1,2 +1,2 @@
 # MSB_imaging
-For files for imaging system development
+Files for LOTUS development
