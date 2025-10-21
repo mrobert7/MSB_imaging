@@ -100,7 +100,7 @@ def end():
 
 #About 0.7°/step
 #128 steps = shaft rotates 90°
-#Parameter of stepping motor(Rotation direction 0 or 1,Rotation speed,Steps)
+#Parameter of stepping motor(Rotation direction 0 (left) or 1 (right),Rotation speed,Steps)
 
 #Code sample for imaging 1 well 
 
@@ -144,102 +144,127 @@ def loop():
     print("working...")
    
     #Movement from initial position to well 1
-    moveSteps_high(0,3,480)
-    moveSteps_low(1,3,130)
+    moveSteps_high(0,3,495)
+    moveSteps_low(0,3,145)
     
-    #Trans-illumination white 
+    
+    #Trans-illumination white
     GPIO.output(Relaymodule_white_tra, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test1_1.sh")
+    os.system("/home/pi/Experiment/test1_1.sh")
     GPIO.output(Relaymodule_white_tra, GPIO.LOW)
     sleep(3)
     
+    
     #Epi-illumination blue 
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_blue, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test2_1.sh")
+    os.system("/home/pi/Experiment/test2_1.sh")
     GPIO.output(Relaymodule_blue, GPIO.LOW)
     sleep(3)
     
-    #Epi-illumination green 
+    
+    
+    
+    #Epi-illumination green
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_green, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test3_1.sh")
+    os.system("/home/pi/Experiment/test3_1.sh")
     GPIO.output(Relaymodule_green, GPIO.LOW)
     sleep(3)
     
+    
     #Epi-illumination white
     moveSteps_filter_light(0,3,256)
+    
     GPIO.output(Relaymodule_white, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test4_1.sh")
+    os.system("/home/pi/Experiment/test4_1.sh")
     GPIO.output(Relaymodule_white, GPIO.LOW)
     sleep(3)
     
     
     #From well1 to well2
     moveSteps_high(0,3,600)
-
+    
+    
     GPIO.output(Relaymodule_white_tra, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test1_2.sh")
+    os.system("/home/pi/Experiment/test1_2.sh")
     GPIO.output(Relaymodule_white_tra, GPIO.LOW)
     sleep(3)
     
+    
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_blue, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test2_2.sh")
+    os.system("/home/pi/Experiment/test2_2.sh")
     GPIO.output(Relaymodule_blue, GPIO.LOW)
     sleep(3)
     
+    
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_green, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test3_2.sh")
+    os.system("/home/pi/Experiment/test3_2.sh")
     GPIO.output(Relaymodule_green, GPIO.LOW)
     sleep(3)
     
+    
     moveSteps_filter_light(0,3,256)
+    
     GPIO.output(Relaymodule_white, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test4_2.sh")
+    os.system("/home/pi/Experiment/test4_2.sh")
     GPIO.output(Relaymodule_white, GPIO.LOW)
     sleep(3)
+    
     
     
     
     #From well2 to well3
     moveSteps_high(0,3,600)
-
+    
     GPIO.output(Relaymodule_white_tra, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test1_3.sh")
+    os.system("/home/pi/Experiment/test1_3.sh")
     GPIO.output(Relaymodule_white_tra, GPIO.LOW)
     sleep(3)
     
+    
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_blue, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test2_3.sh")
+    os.system("/home/pi/Experiment/test2_3.sh")
     GPIO.output(Relaymodule_blue, GPIO.LOW)
     sleep(3)
     
+    
+    
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_green, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test3_3.sh")
+    os.system("/home/pi/Experiment/test3_3.sh")
     GPIO.output(Relaymodule_green, GPIO.LOW)
     sleep(3)
     
+    
     moveSteps_filter_light(0,3,256)
+    
     GPIO.output(Relaymodule_white, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test4_3.sh")
+    os.system("/home/pi/Experiment/test4_3.sh")
     GPIO.output(Relaymodule_white, GPIO.LOW)
     sleep(3)
+    
     
     #Homing motion of x axis from well3 to well1
     moveSteps_high(1,3,1880)
@@ -247,32 +272,37 @@ def loop():
     
     
     #From well1 to well4
-    moveSteps_low(1,3,600)
+    moveSteps_low(0,3,600)
 
     GPIO.output(Relaymodule_white_tra, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test1_4.sh")
+    os.system("/home/pi/Experiment/test1_4.sh")
     GPIO.output(Relaymodule_white_tra, GPIO.LOW)
     sleep(3)
     
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_blue, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test2_4.sh")
+    os.system("/home/pi/Experiment/test2_4.sh")
     GPIO.output(Relaymodule_blue, GPIO.LOW)
     sleep(3)
     
+    
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_green, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test3_4.sh")
+    os.system("/home/pi/Experiment/test3_4.sh")
     GPIO.output(Relaymodule_green, GPIO.LOW)
     sleep(3)
     
+    
     moveSteps_filter_light(0,3,256)
+    
     GPIO.output(Relaymodule_white, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test4_4.sh")
+    os.system("/home/pi/Experiment/test4_4.sh")
     GPIO.output(Relaymodule_white, GPIO.LOW)
     sleep(3)
     
@@ -283,60 +313,72 @@ def loop():
     
     GPIO.output(Relaymodule_white_tra, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test1_5.sh")
+    os.system("/home/pi/Experiment/test1_5.sh")
     GPIO.output(Relaymodule_white_tra, GPIO.LOW)
     sleep(3)
     
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_blue, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test2_5.sh")
+    os.system("/home/pi/Experiment/test2_5.sh")
     GPIO.output(Relaymodule_blue, GPIO.LOW)
     sleep(3)
     
+    
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_green, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test3_5.sh")
+    os.system("/home/pi/Experiment/test3_5.sh")
     GPIO.output(Relaymodule_green, GPIO.LOW)
     sleep(3)
     
+    
     moveSteps_filter_light(0,3,256)
+    
     GPIO.output(Relaymodule_white, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test4_5.sh")
+    os.system("/home/pi/Experiment/test4_5.sh")
     GPIO.output(Relaymodule_white, GPIO.LOW)
     sleep(3)
+    
     
     #From well5 to well6
     moveSteps_high(0,3,600)
     
     GPIO.output(Relaymodule_white_tra, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test1_6.sh")
+    os.system("/home/pi/Experiment/test1_6.sh")
     GPIO.output(Relaymodule_white_tra, GPIO.LOW)
     sleep(3)
     
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_blue, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test2_6.sh")
+    os.system("/home/pi/Experiment/test2_6.sh")
     GPIO.output(Relaymodule_blue, GPIO.LOW)
     sleep(3)
     
+    
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_green, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test3_6.sh")
+    os.system("/home/pi/Experiment/test3_6.sh")
     GPIO.output(Relaymodule_green, GPIO.LOW)
     sleep(3)
     
+    
     moveSteps_filter_light(0,3,256)
+    
     GPIO.output(Relaymodule_white, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test4_6.sh")
+    os.system("/home/pi/Experiment/test4_6.sh")
     GPIO.output(Relaymodule_white, GPIO.LOW)
     sleep(3)
+    
     
     
     #Homing motion of x axis from well6 to well4
@@ -344,34 +386,40 @@ def loop():
     moveSteps_high(0,3,480)
     
     #From well4 to well7
-    moveSteps_low(1,3,600)
+    moveSteps_low(0,3,600)
     
     GPIO.output(Relaymodule_white_tra, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test1_7.sh")
+    os.system("/home/pi/Experiment/test1_7.sh")
     GPIO.output(Relaymodule_white_tra, GPIO.LOW)
     sleep(3)
     
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_blue, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test2_7.sh")
+    os.system("/home/pi/Experiment/test2_7.sh")
     GPIO.output(Relaymodule_blue, GPIO.LOW)
     sleep(3)
     
+    
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_green, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test3_7.sh")
+    os.system("/home/pi/Experiment/test3_7.sh")
     GPIO.output(Relaymodule_green, GPIO.LOW)
     sleep(3)
     
+    
     moveSteps_filter_light(0,3,256)
+    
     GPIO.output(Relaymodule_white, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test4_7.sh")
+    os.system("/home/pi/Experiment/test4_7.sh")
     GPIO.output(Relaymodule_white, GPIO.LOW)
     sleep(3)
+    
     
     
     #From well7 to well8
@@ -379,30 +427,36 @@ def loop():
     #tra white
     GPIO.output(Relaymodule_white_tra, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test1_8.sh")
+    os.system("/home/pi/Experiment/test1_8.sh")
     GPIO.output(Relaymodule_white_tra, GPIO.LOW)
     sleep(3)
     
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_blue, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test2_8.sh")
+    os.system("/home/pi/Experiment/test2_8.sh")
     GPIO.output(Relaymodule_blue, GPIO.LOW)
     sleep(3)
     
+    
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_green, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test3_8.sh")
+    os.system("/home/pi/Experiment/test3_8.sh")
     GPIO.output(Relaymodule_green, GPIO.LOW)
     sleep(3)
     
+    
     moveSteps_filter_light(0,3,256)
+    
     GPIO.output(Relaymodule_white, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test4_8.sh")
+    os.system("/home/pi/Experiment/test4_8.sh")
     GPIO.output(Relaymodule_white, GPIO.LOW)
     sleep(3)
+    
     
     
     #From well8 to well9
@@ -410,36 +464,156 @@ def loop():
     
     GPIO.output(Relaymodule_white_tra, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test1_9.sh")
+    os.system("/home/pi/Experiment/test1_9.sh")
     GPIO.output(Relaymodule_white_tra, GPIO.LOW)
     sleep(3)
     
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_blue, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test2_9.sh")
+    os.system("/home/pi/Experiment/test2_9.sh")
     GPIO.output(Relaymodule_blue, GPIO.LOW)
     sleep(3)
     
+    
     moveSteps_filter_light(1,3,128)
+    
     GPIO.output(Relaymodule_green, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test3_9.sh")
+    os.system("/home/pi/Experiment/test3_9.sh")
     GPIO.output(Relaymodule_green, GPIO.LOW)
     sleep(3)
+    
   
     moveSteps_filter_light(0,3,256)
+    
     GPIO.output(Relaymodule_white, GPIO.HIGH)
     sleep(3)
-    os.system("/home/raspberry4/Experiment/test4_9.sh")
+    os.system("/home/pi/Experiment/test4_9.sh")
     GPIO.output(Relaymodule_white, GPIO.LOW)
     sleep(3)
+    
+    
+    #Homing motion of x axis from well9 to well7
+    moveSteps_high(1,3,1880)
+    moveSteps_high(0,3,480)
+    
+    #From well7 to well10
+    moveSteps_low(0,3,600)
+    
+    GPIO.output(Relaymodule_white_tra, GPIO.HIGH)
+    sleep(3)
+    os.system("/home/pi/Experiment/test1_10.sh")
+    GPIO.output(Relaymodule_white_tra, GPIO.LOW)
+    sleep(3)
+    
+    moveSteps_filter_light(1,3,128)
+    
+    GPIO.output(Relaymodule_blue, GPIO.HIGH)
+    sleep(3)
+    os.system("/home/pi/Experiment/test2_10.sh")
+    GPIO.output(Relaymodule_blue, GPIO.LOW)
+    sleep(3)
+    
+    
+    moveSteps_filter_light(1,3,128)
+    
+    GPIO.output(Relaymodule_green, GPIO.HIGH)
+    sleep(3)
+    os.system("/home/pi/Experiment/test3_10.sh")
+    GPIO.output(Relaymodule_green, GPIO.LOW)
+    sleep(3)
+    
+    
+    moveSteps_filter_light(0,3,256)
+    
+    GPIO.output(Relaymodule_white, GPIO.HIGH)
+    sleep(3)
+    os.system("/home/pi/Experiment/test4_10.sh")
+    GPIO.output(Relaymodule_white, GPIO.LOW)
+    sleep(3)
+    
+    
+    
+    #From well10 to well11
+    moveSteps_high(0,3,600)
+    #tra white
+    GPIO.output(Relaymodule_white_tra, GPIO.HIGH)
+    sleep(3)
+    os.system("/home/pi/Experiment/test1_11.sh")
+    GPIO.output(Relaymodule_white_tra, GPIO.LOW)
+    sleep(3)
+    
+    moveSteps_filter_light(1,3,128)
+    
+    
+    GPIO.output(Relaymodule_blue, GPIO.HIGH)
+    sleep(3)
+    os.system("/home/pi/Experiment/test2_11.sh")
+    GPIO.output(Relaymodule_blue, GPIO.LOW)
+    sleep(3)
+    
+    
+    moveSteps_filter_light(1,3,128)
+    
+    GPIO.output(Relaymodule_green, GPIO.HIGH)
+    sleep(3)
+    os.system("/home/pi/Experiment/test3_11.sh")
+    GPIO.output(Relaymodule_green, GPIO.LOW)
+    sleep(3)
+    
+    
+    moveSteps_filter_light(0,3,256)
+    
+    GPIO.output(Relaymodule_white, GPIO.HIGH)
+    sleep(3)
+    os.system("/home/pi/Experiment/test4_11.sh")
+    GPIO.output(Relaymodule_white, GPIO.LOW)
+    sleep(3)
+    
+    
+    #From well11 to well12
+    moveSteps_high(0,3,600)
+    
+    GPIO.output(Relaymodule_white_tra, GPIO.HIGH)
+    sleep(3)
+    os.system("/home/pi/Experiment/test1_12.sh")
+    GPIO.output(Relaymodule_white_tra, GPIO.LOW)
+    sleep(3)
+    
+    moveSteps_filter_light(1,3,128)
+    
+    GPIO.output(Relaymodule_blue, GPIO.HIGH)
+    sleep(3)
+    os.system("/home/pi/Experiment/test2_12.sh")
+    GPIO.output(Relaymodule_blue, GPIO.LOW)
+    sleep(3)
+    
+    
+    moveSteps_filter_light(1,3,128)
+    
+    GPIO.output(Relaymodule_green, GPIO.HIGH)
+    sleep(3)
+    os.system("/home/pi/Experiment/test3_12.sh")
+    GPIO.output(Relaymodule_green, GPIO.LOW)
+    sleep(3)
+    
+  
+    moveSteps_filter_light(0,3,256)
+    
+    GPIO.output(Relaymodule_white, GPIO.HIGH)
+    sleep(3)
+    os.system("/home/pi/Experiment/test4_12.sh")
+    GPIO.output(Relaymodule_white, GPIO.LOW)
+    sleep(3)
+    
 
     
     #From well9 to Initial position
-    moveSteps_high(1,3,1780)
+    moveSteps_high(1,3,1800)
     sleep(3)
-    moveSteps_low(0,3,1430)
+    moveSteps_low(1,3,2100)
     
     print("done")
   
@@ -458,6 +632,10 @@ schedule(job, interval=1200)
 run_loop()
     
     
+
+
+
+
 
 
 
