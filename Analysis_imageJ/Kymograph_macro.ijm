@@ -59,58 +59,58 @@ list_well9_green = getFileList(dir_well9_green);
 
 
 // well1_coordinate
-x1_well1 = 1026;  // x1の値
-y1_well1 = 631;    // y1の値
-x2_well1 = 1026; // x2の値
-y2_well1 = 1165; // y2の値
+x1_well1 = 1026;  // x1
+y1_well1 = 631;    // y1
+x2_well1 = 1026; // x2
+y2_well1 = 1165; // y2
 
 // well2_coordinate
-x1_well2 = 1060;  // x1の値
-y1_well2 = 645;    // y1の値
-x2_well2 = 1060; // x2の値
-y2_well2 = 1179; // y2の値
+x1_well2 = 1060;  // x1
+y1_well2 = 645;    // y1
+x2_well2 = 1060; // x2
+y2_well2 = 1179; // y2
 
 // well3_coordinate
-x1_well3 = 1066;  // x1の値
-y1_well3 = 636;    // y1の値
-x2_well3 = 1066; // x2の値
-y2_well3 = 1170; // y2の値
+x1_well3 = 1066;  // x1
+y1_well3 = 636;    // y1
+x2_well3 = 1066; // x2
+y2_well3 = 1170; // y2
 
 // well4_coordinate
-x1_well4 = 1051;  // x1の値
-y1_well4 = 630;    // y1の値
-x2_well4 = 1051; // x2の値
-y2_well4 = 1164; // y2の値
+x1_well4 = 1051;  // x1
+y1_well4 = 630;    // y1
+x2_well4 = 1051; // x2
+y2_well4 = 1164; // y2
 
 // well5_coordinate
-x1_well5 = 1054;  // x1の値
-y1_well5 = 636;    // y1の値
-x2_well5 = 1054; // x2の値
-y2_well5 = 1170; // y2の値
+x1_well5 = 1054;  // x1
+y1_well5 = 636;    // y1
+x2_well5 = 1054; // x2
+y2_well5 = 1170; // y2
 
 // well6_coordinate
-x1_well6 = 1060;  // x1の値
-y1_well6 = 630;    // y1の値
-x2_well6 = 1060; // x2の値
-y2_well6 = 1164; // y2の値
+x1_well6 = 1060;  // x1
+y1_well6 = 630;    // y1
+x2_well6 = 1060; // x2
+y2_well6 = 1164; // y2
 
 // well7_coordinate
-x1_well7 = 1054;  // x1の値
-y1_well7 = 633;    // y1の値
-x2_well7 = 1054; // x2の値
-y2_well7 = 1167; // y2の値
+x1_well7 = 1054;  // x1
+y1_well7 = 633;    // y1
+x2_well7 = 1054; // x2
+y2_well7 = 1167; // y2
 
 // well8_coordinate
-x1_well8 = 1066;  // x1の値
-y1_well8 = 639;    // y1の値
-x2_well8 = 1066; // x2の値
-y2_well8 = 1173; // y2の値
+x1_well8 = 1066;  // x1
+y1_well8 = 639;    // y1
+x2_well8 = 1066; // x2
+y2_well8 = 1173; // y2
 
 // well9_coordinate
-x1_well9 = 1062;  // x1の値
-y1_well9 = 651;    // y1の値
-x2_well9 = 1062; // x2の値
-y2_well9 = 1185; // y2の値
+x1_well9 = 1062;  // x1
+y1_well9 = 651;    // y1
+x2_well9 = 1062; // x2
+y2_well9 = 1185; // y2
 
 
 
