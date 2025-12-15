@@ -58,55 +58,55 @@ list_well9_blue = getFileList(dir_well9_blue);
 list_well9_green = getFileList(dir_well9_green);
 
 
-// well1_測定座標
+// well1_coordinate
 x1_well1 = 1026;  // x1の値
 y1_well1 = 631;    // y1の値
 x2_well1 = 1026; // x2の値
 y2_well1 = 1165; // y2の値
 
-// well2_測定座標
+// well2_coordinate
 x1_well2 = 1060;  // x1の値
 y1_well2 = 645;    // y1の値
 x2_well2 = 1060; // x2の値
 y2_well2 = 1179; // y2の値
 
-// well3_測定座標
+// well3_coordinate
 x1_well3 = 1066;  // x1の値
 y1_well3 = 636;    // y1の値
 x2_well3 = 1066; // x2の値
 y2_well3 = 1170; // y2の値
 
-// well4_測定座標
+// well4_coordinate
 x1_well4 = 1051;  // x1の値
 y1_well4 = 630;    // y1の値
 x2_well4 = 1051; // x2の値
 y2_well4 = 1164; // y2の値
 
-// well5_測標
+// well5_coordinate
 x1_well5 = 1054;  // x1の値
 y1_well5 = 636;    // y1の値
 x2_well5 = 1054; // x2の値
 y2_well5 = 1170; // y2の値
 
-// well6_測定座標
+// well6_coordinate
 x1_well6 = 1060;  // x1の値
 y1_well6 = 630;    // y1の値
 x2_well6 = 1060; // x2の値
 y2_well6 = 1164; // y2の値
 
-// well7_測定座標
+// well7_coordinate
 x1_well7 = 1054;  // x1の値
 y1_well7 = 633;    // y1の値
 x2_well7 = 1054; // x2の値
 y2_well7 = 1167; // y2の値
 
-// well8_測定座標
+// well8_coordinate
 x1_well8 = 1066;  // x1の値
 y1_well8 = 639;    // y1の値
 x2_well8 = 1066; // x2の値
 y2_well8 = 1173; // y2の値
 
-// well9_測定座標
+// well9_coordinate
 x1_well9 = 1062;  // x1の値
 y1_well9 = 651;    // y1の値
 x2_well9 = 1062; // x2の値
@@ -125,7 +125,7 @@ for (i=0; i<list_well1_white.length; i++) {
     // please change oval
     run("8-bit");
     run("Invert");
-    // 縦
+   
     makeLine(x1_well1, y1_well1, x2_well1, y2_well1);
     pf = getProfile();
     Array.print(pf);
@@ -142,7 +142,7 @@ for (i=0; i<list_well1_blue.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well1, y1_well1, x2_well1, y2_well1);
     pf = getProfile();
     Array.print(pf);
@@ -159,7 +159,7 @@ for (i=0; i<list_well1_green.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well1, y1_well1, x2_well1, y2_well1);
     pf = getProfile();
     Array.print(pf);
@@ -178,7 +178,7 @@ for (i = 0; i < list_well2_white.length; i++) {
     // please change oval
     run("8-bit");
     run("Invert");
-    // 縦
+    
     makeLine(x1_well2, y1_well2, x2_well2, y2_well2);
     pf = getProfile();
     Array.print(pf);
@@ -196,7 +196,7 @@ for (i = 0; i < list_well2_blue.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well2, y1_well2, x2_well2, y2_well2);
     pf = getProfile();
     Array.print(pf);
@@ -214,7 +214,7 @@ for (i = 0; i < list_well2_green.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well2, y1_well2, x2_well2, y2_well2);
     pf = getProfile();
     Array.print(pf);
@@ -234,7 +234,7 @@ for (i = 0; i < list_well3_white.length; i++) {
     // please change oval
     run("8-bit");
     run("Invert");
-    // 縦
+    
     makeLine(x1_well3, y1_well3, x2_well3, y2_well3);
     pf = getProfile();
     Array.print(pf);
@@ -252,7 +252,7 @@ for (i = 0; i < list_well3_blue.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well3, y1_well3, x2_well3, y2_well3);
     pf = getProfile();
     Array.print(pf);
@@ -270,7 +270,7 @@ for (i = 0; i < list_well3_green.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well3, y1_well3, x2_well3, y2_well3);
     pf = getProfile();
     Array.print(pf);
@@ -289,7 +289,7 @@ for (i = 0; i < list_well4_white.length; i++) {
     // please change oval
     run("8-bit");
     run("Invert");
-    // 縦
+    
     makeLine(x1_well4, y1_well4, x2_well4, y2_well4);
     pf = getProfile();
     Array.print(pf);
@@ -307,7 +307,7 @@ for (i = 0; i < list_well4_blue.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well4, y1_well4, x2_well4, y2_well4);
     pf = getProfile();
     Array.print(pf);
@@ -325,7 +325,7 @@ for (i = 0; i < list_well4_green.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well4, y1_well4, x2_well4, y2_well4);
     pf = getProfile();
     Array.print(pf);
@@ -344,7 +344,7 @@ for (i = 0; i < list_well5_white.length; i++) {
     // please change oval
     run("8-bit");
     run("Invert");
-    // 縦
+    
     makeLine(x1_well5, y1_well5, x2_well5, y2_well5);
     pf = getProfile();
     Array.print(pf);
@@ -362,7 +362,7 @@ for (i = 0; i < list_well5_blue.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well5, y1_well5, x2_well5, y2_well5);
     pf = getProfile();
     Array.print(pf);
@@ -380,7 +380,7 @@ for (i = 0; i < list_well5_green.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well5, y1_well5, x2_well5, y2_well5);
     pf = getProfile();
     Array.print(pf);
@@ -399,7 +399,7 @@ for (i = 0; i < list_well6_white.length; i++) {
     // please change oval
     run("8-bit");
     run("Invert");
-    // 縦
+    
     makeLine(x1_well6, y1_well6, x2_well6, y2_well6);
     pf = getProfile();
     Array.print(pf);
@@ -417,7 +417,7 @@ for (i = 0; i < list_well6_blue.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well6, y1_well6, x2_well6, y2_well6);
     pf = getProfile();
     Array.print(pf);
@@ -435,7 +435,7 @@ for (i = 0; i < list_well6_green.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well6, y1_well6, x2_well6, y2_well6);
     pf = getProfile();
     Array.print(pf);
@@ -454,7 +454,7 @@ for (i = 0; i < list_well7_white.length; i++) {
     // please change oval
     run("8-bit");
     run("Invert");
-    // 縦
+    
     makeLine(x1_well7, y1_well7, x2_well7, y2_well7);
     pf = getProfile();
     Array.print(pf);
@@ -472,7 +472,7 @@ for (i = 0; i < list_well7_blue.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well7, y1_well7, x2_well7, y2_well7);
     pf = getProfile();
     Array.print(pf);
@@ -490,7 +490,7 @@ for (i = 0; i < list_well7_green.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well7, y1_well7, x2_well7, y2_well7);
     pf = getProfile();
     Array.print(pf);
@@ -509,7 +509,7 @@ for (i = 0; i < list_well8_white.length; i++) {
     // please change oval
     run("8-bit");
     run("Invert");
-    // 縦
+    
     makeLine(x1_well8, y1_well8, x2_well8, y2_well8);
     pf = getProfile();
     Array.print(pf);
@@ -527,7 +527,7 @@ for (i = 0; i < list_well8_blue.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well8, y1_well8, x2_well8, y2_well8);
     pf = getProfile();
     Array.print(pf);
@@ -545,7 +545,7 @@ for (i = 0; i < list_well8_green.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well8, y1_well8, x2_well8, y2_well8);
     pf = getProfile();
     Array.print(pf);
@@ -564,7 +564,7 @@ for (i = 0; i < list_well9_white.length; i++) {
     // please change oval
     run("8-bit");
     run("Invert");
-    // 縦
+    
     makeLine(x1_well9, y1_well9, x2_well9, y2_well9);
     pf = getProfile();
     Array.print(pf);
@@ -582,7 +582,7 @@ for (i = 0; i < list_well9_blue.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well9, y1_well9, x2_well9, y2_well9);
     pf = getProfile();
     Array.print(pf);
@@ -600,7 +600,7 @@ for (i = 0; i < list_well9_green.length; i++) {
     // INSERT MACRO HERE
     // please change oval
     run("8-bit");
-    // 縦
+    
     makeLine(x1_well9, y1_well9, x2_well9, y2_well9);
     pf = getProfile();
     Array.print(pf);
