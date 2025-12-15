@@ -1,4 +1,4 @@
-// ▼関数：Redチャネルを自動で取得して選択（split + red抽出）
+// 
 function selectRedChannel(imagePath) {
     open(imagePath);
     run("Split Channels");
@@ -12,31 +12,31 @@ function selectRedChannel(imagePath) {
     exit("Error: Red channel not found.");
 }
 
-// ▼フォルダ選択
+// 
 dir1 = getDirectory("Choose Source Directory (with all images including reference)");
 saveDir = getDirectory("Choose Destination Directory to save normalized images");
 roiApplyDir = getDirectory("Choose folder of images to apply ROI");
 
-// ▼ファイル名設定
+// 
 normalizedResultPath = saveDir + "normalized_measurements.csv";
 roiAppliedResultPath = saveDir + "roi_applied_measurements.csv";
 roiZipPath = saveDir + "roi_all.zip";
 
-// ▼初期化
+// 
 list1 = getFileList(dir1);
 list2 = getFileList(roiApplyDir);
 setBatchMode(true);
 roiManager("reset");
 run("Clear Results");
 
-// ▼基準画像（list1[0]）のRedチャネルを取得・処理
+// 
 refPath = dir1 + list1[0];
 refRedTitle = selectRedChannel(refPath);
 rename("Reference");
 run("8-bit");
 run("Invert");
 
-// ▼対象画像群の処理（Splitあり）
+// 
 for (i = 1; i < list1.length; i++) {
     showProgress(i, list1.length - 1);
 
@@ -50,7 +50,7 @@ for (i = 1; i < list1.length; i++) {
 
     selectWindow("Result of Target_" + i);
 
-    // ROI生成範囲（例：well1）
+    // 
     makeRectangle(758, 278, 498, 472);
     run("Crop");
 
@@ -69,11 +69,11 @@ for (i = 1; i < list1.length; i++) {
 close("Reference");
 run("Clear Results");
 
-// ▼ROIをまとめて保存
+// 
 roiManager("Deselect");
 roiManager("Save", roiZipPath);
 
-// ▼ROI適用と再測定（Splitしない）
+// 
 roiCount = roiManager("count");
 imageCount = list2.length;
 
@@ -89,13 +89,13 @@ for (j = 0; j < imageCount; j++) {
         roiManager("Select", j);
         run("Measure");
     } else {
-        print("警告：画像 " + j + " に対応する ROI が存在しません");
+        print("Warning : No ROI found for image");
     }
 
     close(); // cropped image
 }
 
-// ▼測定結果を保存
+// 
 saveAs("Results", roiAppliedResultPath);
 run("Clear Results");
 setBatchMode(false);
