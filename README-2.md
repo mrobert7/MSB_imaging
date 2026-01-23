@@ -90,21 +90,11 @@ If you use LOTUS in your research, please cite:
 
 > Sakai, M., et al. (2026). LOTUS: A low-cost open-source automated biofilm imaging system for spatio-temporal analysis of bacterial gene expression. *PLOS ONE*. DOI: [10.1371/journal.pone.0339652](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0339652)
 
-## Applications
-
-LOTUS has been successfully used to study:
-
-- **E. coli biofilm heterogeneity** - Spatial and temporal patterns in gene expression
-- **Antibiotic resistance mechanisms** - Stress-response dynamics in biofilms
-- **Metabolic transitions** - Tracking metabolic state changes using fluorescent biosensors
-- **2D vs 3D growth patterns** - Distinguishing spreading from thickening growth
-- **Multi-strain interactions** - Co-culture biofilm studies
-
 ## Comparison to Commercial Systems
 
 | Feature | LOTUS | Commercial Systems |
 |---------|-------|-------------------|
-| Cost | < $500 | $10,000 - $100,000+ |
+| Cost | < $550 | $10,000 - $100,000+ |
 | Application | Macro-scale screening | Single-cell to macro |
 | Resolution | Semi-quantitative | High-resolution quantitative |
 | Throughput | Multi-sample (configurable) | Varies |
@@ -133,9 +123,7 @@ Please open an issue or submit a pull request on GitHub.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-This means you are free to:
+You are free to:
 - Use LOTUS for academic or commercial purposes
 - Modify and distribute the design
 - Build upon this work
@@ -150,7 +138,7 @@ We thank the open-source hardware community for inspiration and the microbiology
 
 Special thanks to:
 - PLOS ONE reviewers for thorough feedback that improved the system
-- Colleagues and MSB lab beta testers who provided validation data
+- Colleagues and MSB lab beta testers at Kyoto University who provided validation data
 - The Raspberry Pi Foundation for accessible computing platforms
 
 ## Additional Resources
@@ -158,7 +146,7 @@ Special thanks to:
 - **PLOS ONE publication:** [Link to paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0339652)
 - **Supplementary Information:** Detailed validation protocols and additional data
 - **Video demonstrations:** See `Supplementary material_video/`
-- **Community forum:** [Link to discussion forum if applicable]
+- **Community forum:** [TBA]
 
 ---
 
