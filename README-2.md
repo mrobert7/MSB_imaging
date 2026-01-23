@@ -1,7 +1,6 @@
 # LOTUS: A low-cost time-lapse automated imaging system for spatio-temporal analysis of microbial colony or biofilm development
 
-[![DOI](https://img.shields.io/badge/DOI-10.1371%2Fjournal.pone.XXXXXX-blue)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0339652)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![DOI](https://img.shields.io/badge/DOI-10.1371/journal.pone.0339652-blue)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0339652)
 
 ## Overview
 
@@ -89,7 +88,7 @@ Demonstration videos showing:
 
 If you use LOTUS in your research, please cite:
 
-> Sakai, M., et al. (2026). LOTUS: A low-cost open-source automated biofilm imaging system for spatio-temporal analysis of bacterial gene expression. *PLOS ONE*. DOI: [10.1371/journal.pone.XXXXXX](https://doi.org/10.1371/journal.pone.XXXXXX)
+> Sakai, M., et al. (2026). LOTUS: A low-cost open-source automated biofilm imaging system for spatio-temporal analysis of bacterial gene expression. *PLOS ONE*. DOI: [10.1371/journal.pone.0339652](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0339652)
 
 ## Applications
 
